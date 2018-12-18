@@ -1,0 +1,43 @@
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.Scanner;
+
+
+public class arrayListKateak_interator {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner teklatua=new Scanner (System.in);
+		ArrayList <String> arrayListKatea=new ArrayList<String>();/*Komando honekin deklaratzen 
+		dira arrayList bakoitza*/
+		String katea;
+		
+		
+		do {
+		System.out.println("Sartu katea: ");
+		katea=teklatua.nextLine();
+		arrayListKatea.add(katea);
+		}while (!katea.equals(""));
+		
+		teklatua.close();
+		
+		/*Iteratorra arraya bete ondoren deklaratu behar da, bestela hutsik aterako
+		  da*/
+		
+		for (int i = 0 ; i == arrayListKatea.size();i++) {
+			arrayListKatea.get(i);
+			System.out.println(arrayListKatea);
+		}
+		
+		Iterator<String>it=arrayListKatea.iterator();
+		while(it.hasNext()) {
+			katea=it.next();
+			System.out.println(katea);
+		}
+		
+		
+		
+
+	}
+
+}

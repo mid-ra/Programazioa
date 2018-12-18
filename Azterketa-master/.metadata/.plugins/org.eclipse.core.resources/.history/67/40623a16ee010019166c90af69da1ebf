@@ -1,0 +1,16 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class arrayListZenbat {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner teklatua= new Scanner (System.in);
+		ArrayList <integer> arrayListKatea=new ArrayList<integer>();
+		
+
+		
+
+	}
+
+}
